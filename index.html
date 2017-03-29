@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FRONTEND TEST</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Вставка HTML5 поєднується з Respond.js для підтримки в IE8 елементів HTML5 та медіа-запитів -->
+    <!-- ЗАСТЕРЕЖЕННЯ: файл Respond.js не працює, якщо ви проглядаєте сторінку відкривши її з файлової системи -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="top-menu">
+            <ul class="list-unstyled">
+                <li><a href="#">delivery</a> </li>
+                <li><a href="#">faq</a> </li>
+                <li><a href="#">help</a> </li>
+                <li class="pull-right liselectBox">
+                    <ul class="selectBox">
+                    <li class="currencySelect">
+                         <select name="number">
+                        <option >Dollar</option>
+                        <option selected="selected">Pound</option>
+                        <option>Grn</option>
+                    </select>
+                    </li>
+                   <li class="lenqSelect">
+                        <select name="number ">
+                        <option>RU</option>
+                        <option selected="selected">UKR</option>
+                        <option>EN</option>
+                    </select>
+                   </li>
+                    </ul>
+
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="mainMenuBox">
+        <script>
+            $(function(){ $( ".mainMenuBox" ).load( "menu.html" );  });
+            </script>
+    </div>
+
+
+</header>
+<main>
+    <div class="container">
+        <div class="text-center">
+            <label class="BigTitle">Catalog</label>
+        </div>
+        <div class="catalog-menu text-center">
+            <ul class="nav list-unstyled">
+                <li><a href="#">all</a> </li>
+                <li><a href="#">t-shirts</a> </li>
+                <li><a href="#">sweaters</a> </li>
+                <li><a href="#">shorts</a> </li>
+                <li><a href="#">jackets</a> </li>
+                <li><a href="#">accessories</a> </li>
+            </ul>
+        </div>
+        <div class="productBox text-center">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="productPic">
+                        <a href="#">
+                            <img src="img/product1.png">
+                        </a>
+                    </div>
+                    <div class="text-center"><label class="productName">product</label></div>
+                    <div class="text-center"><label class="oldProductPrice">$36</label><label class="NewProductPrice">$36</label></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="productPic">
+                        <a href="#">
+                            <img src="img/product2.png">
+                        </a>
+                    </div>
+                    <div class="text-center"><label class="productName">product</label></div>
+                    <div class="text-center"><label class="productPrice">$36</label></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="productPic">
+                        <a href="#">
+                            <img src="img/product3.png">
+                        </a>
+                    </div>
+                    <div class="text-center"><label class="productName">product</label></div>
+                    <div class="text-center"><label class="productPrice">$36</label></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="text-center oooi">
+						<div class="productPic">
+						<span class="uuu">
+							<button class="newProductButton">new</button>
+						</span>
+						
+                        <a href="#">
+                            <img src="img/product4.png">
+                        </a>
+							
+                    </div>
+					</div>
+                    
+                    <div class="text-center"><label class="productName">product</label></div>
+                    <div class="text-center"><label class="productPrice">$36</label></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="productPic">
+                        <a href="#">
+                            <img src="img/product5.png">
+                        </a>
+                    </div>
+                    <div class="text-center"><label class="productName">product</label></div>
+                    <div class="text-center"><label class="productPrice">$36</label></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="productPic">
+                        <a href="#">
+                            <img src="img/product6.png">
+                        </a>
+                    </div>
+                    <div class="text-center"><label class="productName">product</label></div>
+                    <div class="text-center"><label class="productPrice">$36</label></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="productPic">
+                        <a href="#">
+                            <img src="img/product7.png">
+                        </a>
+                    </div>
+                    <div class="text-center"><label class="productName">product</label></div>
+                    <div class="text-center"><label class="productPrice">$36</label></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="productPic">
+                        <a href="#">
+                            <img src="img/product8.png">
+                        </a>
+                    </div>
+                    <div class="text-center"><label class="productName">product</label></div>
+                    <div class="text-center"><label class="productPrice">$36</label></div>
+                </div>
+            </div>
+            <div class="LoadMore">
+                <div class="text-center text-uppercase">
+                    <a href="#">load more...</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <section class="subscribe text-center">
+        <div class="container">
+            <div><label>subscribe</label></div>
+            <div class="sabscribeLable"><label>Stay updated on news</label></div>
+            <div><button class="text-uppercase text-left">you email adress<span class="glyphicon glyphicon-triangle-right pull-right" aria-hidden="true"></span></button></div>
+        </div>
+
+    </section>
+</main>
+<footer>
+<div class="footerBox">
+    <script>
+        $(function(){ $( ".footerBox" ).load( "menu.html" );  })
+    </script>
+</div>
+</footer>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

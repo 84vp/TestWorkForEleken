@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font1: 'Lato', sans-serif;
+
+//COLORS
+@menuTextColor: #999999;
+@border1: solid 1px RGB(237,237,237);
+//TEXT SIZES
+@menuText1: 11px;
+@menuText2: 12px;
+
+body {
+  font-family: @font1
+}
+main {
+  margin-top: 100px;
+}
+//GLOBAL STYLES
+a {
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  &:hover {
+    background: none;
+    border-bottom: 2px solid #248DDD;
+  }
+  &:visited {
+    color: red;
+  }
+
+}
+//nav {
+//	a {
+//		&:link {
+//			color: @menuTextColor;
+//		}
+//		&:visited {
+//      color: red; 
+//  }
+//	}
+//}
+//	
+
+
+  a, a:hover, a:focus {
+    background: none !important;
+  }
+  //END GLOBAL STYLES
+
+  //TOP MENU STYLES
+  .top-menu {
+
+    font-size: @menuText1;
+    text-transform: uppercase;
+    a {color: @menuTextColor;
+    }
+    ul {
+      margin: 0;
+    }
+    li {
+      display: inline-block;
+      padding: 15px 20px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+
+      }
+
+    }
+  }
+  .selectBox {
+    li {
+      select {
+        text-transform: uppercase;
+        color: @menuTextColor;
+        border: none !important;
+      }
+      &:last-child {
+        border-left: @border1;
+      }
+    }
+  }
+  .liselectBox {
+    padding: 0 !important;
+  }
+  //END TOP MENU STYLES
+  // MAIN MENU STYLES
+  .brendname {
+    color: black;
+    font-size: 32px;
+    margin-top: 5px;
+  }
+  .BigTitle {
+    font-size: 58px;
+  }
+  .main-menu, .catalog-menu {
+    color: @menuTextColor;
+    height: 98px;
+    text-transform: uppercase;
+    //line-height: 3;
+    padding: 15px 0;
+    li {
+      font-size: @menuText2;
+      display: inline-block;
+      padding: 15px 5px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+      a {
+        color: @menuTextColor;
+      }
+    }
+  }
+  .mainMenuBox  {
+
+    border-top: @border1;
+    border-bottom: @border1;
+  }
+  .countBag {
+    text-align: center;
+    margin-left: 9px;
+    line-height: 2;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: solid 2px #5DA8E4;
+  }
+  .searchTeg {
+    margin-left: 20px;
+  }
+  //END MAIN MENU STYLES
+
+  .productName {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  .productPrice {
+    color: @menuTextColor;
+    font-size: 16px;
+    padding: 5px 7px;
+  }
+.oldProductPrice {
+	color: @menuTextColor;
+    font-size: 16px;
+    padding: 5px 7px;
+	text-decoration: line-through;
+}
+  .NewProductPrice {
+    color: #FC411D;
+    font-size: 16px;
+    padding: 5px 7px;
+  }
+  .LoadMore {
+    margin: 50px 0;
+    a {
+      text-decoration: none;
+      font-size: 12px;
+      color: @menuTextColor;
+    }
+
+  }
+  .subscribe {
+    padding: 65px 30px;
+    height: 290px;
+    background-image: url("../img/fon1.png");
+    background-size: cover;
+    .sabscribeLable {
+      font-size: 36px;
+      color: white;
+      margin: 25px;
+    }
+    button {
+      width: 300px;
+      color: white;
+      padding: 15px;
+      background: inherit;
+      box-shadow: none;
+      border: 2px solid white;
+      border-radius: 30px;
+    }
+  }
+  .copirights {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: @menuTextColor;
+    line-height: 6;
+    float: right;
+  }
+  .footerBox .bagmenu {
+    display: none;
+  }
+  .mainMenuBox .copirights {display: none}
+
+  //MEDIA
+  @media screen and (max-width: 760px)  {
+    main {
+      margin-top: 0;
+    }
+    .menu-col {
+      border-top: @border1;
+    }
+    .top-menu li {
+      padding: 3px 5px;
+    }
+    .catalog-menu {
+      height: auto;
+    }
+    .main-menu li, .catalog-menu li {
+      text-align: left;
+      height: auto;
+      display: list-item;
+      padding: 2px;
+      a {
+        padding: 0;
+      }
+    }
+    .bagmenu {
+      position: absolute;
+      right: 45px;
+      top: -56px;
+      li {
+        display: inline-block;
+      }
+      .countBag {
+        line-height: 4;
+        text-align: center;
+      }
+    }
+    .subscribe {
+      height: auto;
+    }
+    .copirights {
+      width: 100%;
+    }
+
+}
+.uuu {
+	 position: absolute;
+	padding: 25px;
+}
+.newProductButton {
+	background-color: #228BDC;    
+   
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 12px;
+    width: 50px;
+    height: 25px;
+    font-size: 10px;
+}
+
+.colorRed {
+	color: red !important;
+	a {
+		color: red !important;
+		&:link {
+			color: red !important;
+		}
+	}
+}
